@@ -50,9 +50,10 @@ material = { group = "com.google.android.material", name = "material", version.r
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 
 calorietracker-android-application = { id = "calorietracker.android.application", version = "unspecified" }
 calorietracker-android-application-ui = { id = "calorietracker.android.application.ui", version = "unspecified" }
 calorietracker-android-library = { id = "calorietracker.android.library", version = "unspecified" }
-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
+calorietracker-android-library-ui = {id = "calorietracker.android.library.ui" , version = "unspecified"}
 

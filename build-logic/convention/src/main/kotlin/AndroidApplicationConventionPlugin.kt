@@ -2,7 +2,6 @@ import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
-import utils.configureBuildTypes
 import utils.configureKotlinAndroid
 import utils.libs
 
@@ -36,8 +35,21 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                     }
                 }
 
+                buildFeatures {
+                    buildConfig = true
+                }
+
+                buildTypes {
+                    release {
+                        isMinifyEnabled = false
+                        proguardFiles(
+                            getDefaultProguardFile("proguard-android-optimize.txt"),
+                            "proguard-rules.pro"
+                        )
+                    }
+                }
+
                 configureKotlinAndroid(this)
-                configureBuildTypes(commonExtension = this)
             }
         }
     }

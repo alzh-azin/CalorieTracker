@@ -12,11 +12,33 @@ class AndroidLibraryConventionPlugin : Plugin<Project>{
         target.run {
 
             pluginManager.run {
-                apply("com.android.application")
+                apply("com.android.library")
                 apply("org.jetbrains.kotlin.android")
             }
 
             extensions.configure<LibraryExtension>{
+
+                defaultConfig {
+                    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+                    consumerProguardFiles("consumer-rules.pro")
+                }
+
+                buildFeatures {
+                    buildConfig = true
+                }
+
+                buildTypes {
+                    release {
+                        isMinifyEnabled = false
+                        proguardFiles(
+                            getDefaultProguardFile("proguard-android-optimize.txt"),
+                            "proguard-rules.pro"
+                        )
+                    }
+                }
+
+
+
                 configureKotlinAndroid(this)
             }
 

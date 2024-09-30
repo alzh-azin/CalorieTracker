@@ -46,5 +46,10 @@ gradlePlugin {
             id = "calorietracker.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
+
+        register("androidLibraryUi"){
+            id = "calorietracker.android.library.ui"
+            implementationClass = "AndroidLibraryUiConventionPlugin"
+        }
     }
 }
