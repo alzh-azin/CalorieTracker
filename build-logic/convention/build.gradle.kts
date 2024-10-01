@@ -51,5 +51,10 @@ gradlePlugin {
             id = "calorietracker.android.library.ui"
             implementationClass = "AndroidLibraryUiConventionPlugin"
         }
+
+        register("androidSerialization"){
+            id = "calorietracker.android.serialization"
+            implementationClass = "AndroidSerializationConventionPlugin"
+        }
     }
 }

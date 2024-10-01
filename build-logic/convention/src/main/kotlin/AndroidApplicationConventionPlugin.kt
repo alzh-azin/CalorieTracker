@@ -16,7 +16,6 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
         target.apply{
             plugin(target.getAndroidApplication())
             plugin(target.getKotlinAndroid())
-            plugin(target.getKotlinSerialization())
         }
 
         target.run {

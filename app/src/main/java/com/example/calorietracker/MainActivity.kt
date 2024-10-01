@@ -25,7 +25,7 @@ class MainActivity : ComponentActivity() {
             CompositionLocalProvider(LocalSpacing provides Dimensions()) {
                 CalorieTrackerTheme {
                     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                        WelcomeScreen()
+                        NavGraph()
                     }
                 }
             }

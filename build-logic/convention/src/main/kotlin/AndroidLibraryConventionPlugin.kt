@@ -17,7 +17,6 @@ class AndroidLibraryConventionPlugin : Plugin<Project>{
         target.apply {
             plugin(target.getAndroidLibrary())
             plugin(target.getKotlinAndroid())
-            plugin(target.getKotlinSerialization())
         }
 
         target.run {

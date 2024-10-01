@@ -10,6 +10,8 @@ activityCompose = "1.9.1"
 composeBom = "2024.04.01"
 androidTools = "31.2.2"
 composeCompiler = "1.5.1"
+serialization = "1.6.3"
+navigation = "2.8.1"
 
 #Project versions
 projectApplicationId = "com.example.calorietracker"
@@ -38,6 +40,8 @@ androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-toolin
 androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
 androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
 androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
 
 # Gradle
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
@@ -57,4 +61,5 @@ calorietracker-android-application = { id = "calorietracker.android.application"
 calorietracker-android-application-ui = { id = "calorietracker.android.application.ui", version = "unspecified" }
 calorietracker-android-library = { id = "calorietracker.android.library", version = "unspecified" }
 calorietracker-android-library-ui = {id = "calorietracker.android.library.ui" , version = "unspecified"}
+calorietracker-android-serialization = {id = "calorietracker.android.serialization" , version = "unspecified"}
 
