@@ -6,15 +6,21 @@ import utils.configureKotlinAndroid
 import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 import org.gradle.kotlin.dsl.kotlin
+import utils.getAndroidApplication
+import utils.getAndroidLibrary
+import utils.getKotlinAndroid
+import utils.getKotlinSerialization
 
 class AndroidLibraryConventionPlugin : Plugin<Project>{
     override fun apply(target: Project) {
-        target.run {
 
-            pluginManager.run {
-                apply("com.android.library")
-                apply("org.jetbrains.kotlin.android")
-            }
+        target.apply {
+            plugin(target.getAndroidLibrary())
+            plugin(target.getKotlinAndroid())
+            plugin(target.getKotlinSerialization())
+        }
+
+        target.run {
 
             extensions.configure<LibraryExtension>{
 
