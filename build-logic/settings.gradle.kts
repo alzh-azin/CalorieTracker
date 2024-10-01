@@ -1,6 +1,7 @@
 pluginManagement{
     repositories {
-         google()
+
+        google()
          mavenCentral()
     }
 
@@ -9,7 +10,7 @@ pluginManagement{
 dependencyResolutionManagement {
     repositories {
 
-         google()
+        google()
          mavenCentral()
     }
     versionCatalogs {
