@@ -12,6 +12,10 @@ androidTools = "31.2.2"
 composeCompiler = "1.5.1"
 serialization = "1.6.3"
 navigation = "2.8.1"
+hilt = "2.51.1"
+hiltExt = "1.2.0"
+androidxHiltNavigationCompose = "1.2.0"
+hiltCommon = "1.2.0"
 
 #Project versions
 projectApplicationId = "com.example.calorietracker"
@@ -43,6 +47,12 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation" }
 
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
+hilt-ext-compiler = { module = "androidx.hilt:hilt-compiler", version.ref = "hiltExt" }
+androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+androidx-hilt-common = { module = "androidx.hilt:hilt-common", version.ref = "hiltCommon" }
+
 # Gradle
 android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "agp" }
 android-tools-common = { group = "com.android.tools", name = "common", version.ref = "androidTools" }
@@ -56,10 +66,13 @@ jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = 
 android-library = { id = "com.android.library", version.ref = "agp" }
 jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+dagger-hilt-android = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }
 
 calorietracker-android-application = { id = "calorietracker.android.application", version = "unspecified" }
 calorietracker-android-application-ui = { id = "calorietracker.android.application.ui", version = "unspecified" }
 calorietracker-android-library = { id = "calorietracker.android.library", version = "unspecified" }
 calorietracker-android-library-ui = {id = "calorietracker.android.library.ui" , version = "unspecified"}
 calorietracker-android-serialization = {id = "calorietracker.android.serialization" , version = "unspecified"}
+calorietracker-android-hilt = { id = "calorietracker.android.hilt" , version = "unspecified"}
 

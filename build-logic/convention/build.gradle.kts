@@ -56,5 +56,10 @@ gradlePlugin {
             id = "calorietracker.android.serialization"
             implementationClass = "AndroidSerializationConventionPlugin"
         }
+
+        register("hilt"){
+            id = "calorietracker.android.hilt"
+            implementationClass = "HiltConventionPlugin"
+        }
     }
 }
