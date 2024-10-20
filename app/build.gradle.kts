@@ -21,6 +21,7 @@ dependencies {
 
     implementation(projects.core)
     implementation(projects.onboarding.onboardingPresentation)
+    implementation(projects.onboarding.onboardingDomain)
     implementation(projects.coreUi)
 
 }

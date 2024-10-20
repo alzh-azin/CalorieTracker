@@ -19,6 +19,12 @@ sealed class NavigationRoute {
     data object Weight : NavigationRoute()
 
     @Serializable
+    data object Activity : NavigationRoute()
+
+    @Serializable
+    data object Goal : NavigationRoute()
+
+    @Serializable
     data object NutrientGoal : NavigationRoute()
 
     @Serializable
